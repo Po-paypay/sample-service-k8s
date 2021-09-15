@@ -1,17 +1,21 @@
 ---
 resources:
-  - ../../base
-  - sre-ojt-posung-chen-sample-canary-service.yaml
-  - sre-ojt-posung-chen-sample-ingress.yaml
+- ../../base
+- sre-ojt-posung-chen-sample-canary-service.yaml
+- sre-ojt-posung-chen-sample-ingress.yaml
+
 configMapGenerator:
-  - name: sre-ojt-posung-chen-sample
-    envs:
-      - sre-ojt-posung-chen-sample.properties
-    behavior: merge
+- name: sre-ojt-posung-chen-sample
+  envs:
+  - sre-ojt-posung-chen-sample.properties
+  behavior: merge
+
 patchesStrategicMerge:
-  - patch.yaml
+- patch.yaml
+
 images:
-  - name: docker.paypay.ne.jp/sre-ojt-posung-chen-sample
-    newTag: "123"
+- name: docker.paypay.ne.jp/sre-ojt-posung-chen-sample
+  newTag: "master-914ebe4-20210811-012539"
+
 commonAnnotations:
   reloaded: "1"
