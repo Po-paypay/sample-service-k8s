@@ -12,6 +12,6 @@ patchesStrategicMerge:
   - patch.yaml
 images:
   - name: docker.paypay.ne.jp/sre-ojt-posung-chen-sample
-    newTag: "demo-test2-db5ce854ccb10c4227abec94975ae22a2b678e3c"
+    newTag: "demo-test5-b9fb15caf4737abe9a468ed9ca641bfe8edf0659"
 commonAnnotations:
   reloaded: "1"
